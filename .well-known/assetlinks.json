@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.maazm7d.termuxhub",
+      "sha256_cert_fingerprints": [
+        "511696b7a4a28a447aaca626870f67677b23859afd67cf504897c1e1b2f6dd5c"
+      ]
+    }
+  }
+]
