@@ -9,15 +9,14 @@
     const toolId = window.location.hash.replace("#", "");
 
     if (toolId) {
-      // Try to open the app (Android App Link)
-      window.location.href =
-        "https://maazm7d.github.io/termuxhub/tool/#" + toolId;
+      // Try custom scheme (opens app directly)
+      window.location.href = "termuxhub://tool/" + toolId;
     }
 
+    // Fallback to F-Droid if app not installed
     setTimeout(() => {
-      window.location.href =
-        "https://f-droid.org/packages/com.maazm7d.termuxhub";
-    }, 1500);
+      window.location.href = "https://f-droid.org/packages/com.maazm7d.termuxhub";
+    }, 1200);
   </script>
 </head>
 
