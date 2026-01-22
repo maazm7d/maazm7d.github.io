@@ -2,18 +2,18 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Opening TermuxHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script>
-    const parts = window.location.pathname.split("/");
-    const toolId = parts[parts.length - 1];
+    const toolId = window.location.hash.replace("#", "");
 
-    // Try opening the app
-    window.location.href =
-      "https://maazm7d.github.io/termuxhub/tool/" + toolId;
+    if (toolId) {
+      // Try to open the app (Android App Link)
+      window.location.href =
+        "https://maazm7d.github.io/termuxhub/tool/#" + toolId;
+    }
 
-    // Fallback to F-Droid if app not installed
     setTimeout(() => {
       window.location.href =
         "https://f-droid.org/packages/com.maazm7d.termuxhub";
