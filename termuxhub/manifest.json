@@ -1,0 +1,6 @@
+{
+  "name": "Termux Hub",
+  "start_url": "https://maazm7d.github.io/termuxhub/tool/",
+  "scope": "https://maazm7d.github.io/termuxhub/",
+  "display": "standalone"
+}
