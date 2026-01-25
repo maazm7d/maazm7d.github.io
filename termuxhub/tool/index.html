@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Opening TermuxHub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script>
-    const toolId = window.location.hash.replace("#", "");
-
-    if (toolId) {
-      // Try custom scheme (opens app directly)
-      window.location.href = "termuxhub://tool/" + toolId;
-    }
-
-    // Fallback to F-Droid if app not installed
-    setTimeout(() => {
-      window.location.href = "https://f-droid.org/packages/com.maazm7d.termuxhub";
-    }, 1200);
-  </script>
+  <meta charset="utf-8" />
+  <title>Termux Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
-  <p>Opening TermuxHub…</p>
+  <h2>Opening Termux Hub</h2>
+
+  <p>
+    If you have the Termux Hub app installed, it should open automatically.
+  </p>
+
+  <p>
+    If it didn’t open, you can install the app from F-Droid:
+  </p>
+
+  <p>
+    <a href="https://f-droid.org/packages/com.maazm7d.termuxhub">
+      Get Termux Hub on F-Droid
+    </a>
+  </p>
 </body>
 </html>
