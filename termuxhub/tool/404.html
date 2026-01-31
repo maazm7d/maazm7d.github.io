@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Opening Termux Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <script>
+    const path = window.location.pathname;
+    const toolId = path.split("/").pop();
+
+    const appUrl = "/termuxhub/tool/?id=" + toolId;
+
+    window.location.replace(appUrl);
+
+    setTimeout(() => {
+      window.location.href =
+        "https://f-droid.org/packages/com.maazm7d.termuxhub";
+    }, 1500);
+  </script>
+</head>
+
+<body>
+  <h2>Opening Termux Hub…</h2>
+  <p>If the app does not open, you’ll be redirected to F-Droid.</p>
+
+  <p>
+    <a href="https://f-droid.org/packages/com.maazm7d.termuxhub">
+      Install Termux Hub
+    </a>
+  </p>
+</body>
+</html>
